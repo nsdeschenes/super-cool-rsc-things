@@ -1,0 +1,27 @@
+[project]
+name = "api"
+version = "0.1.0"
+description = "Add a short description here"
+authors = [
+    { name = "nsdeschenes", email = "nsdeschenes@outlook.com" }
+]
+dependencies = [
+    "fastapi~=0.96.0",
+    "uvicorn~=0.22.0",
+    "websockets~=11.0.3",
+    "pydantic~=1.10.8",
+    "starlette~=0.27.0",
+    "sse-starlette~=1.6.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+
+[tool.hatch.metadata]
+allow-direct-references = true
